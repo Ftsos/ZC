@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zoom Clone</title>
+</head>
+<body>
+	<div style="text-align: center;">
+<h3>Intoduce El Codigo de La Reunion</h3>
+<input type="text" id="code">
+<button id="send">Enviar</button>
+</div>
+<script type="text/javascript">
+	const input = document.querySelector("#code")
+	const send = document.querySelector("#send")
+
+	send.addEventListener("click", () => {
+		location.href = "/room/" + input.value
+	})
+</script>
+</body>
+</html>
