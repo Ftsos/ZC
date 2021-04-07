@@ -4,7 +4,7 @@ const app = express()
 const server = require("http").Server(app)
 const io = require("socket.io")(server)
 const ejs = require("ejs")
-const port = 8080;
+const port = 8080 | process.env.PORT;
 const { PeerServer } = require('peer');
  
 app.set("view engine", "ejs")
